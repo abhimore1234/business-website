@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fas fa-briefcase"></i> My Business</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#signup" class="signup">Sign Up</a>
+            <a href="#login" class="login">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to My Business</h1>
+            <p>Your trusted solution provider.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading company providing top-notch solutions for your business needs. Our team is dedicated to delivering quality and value.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites tailored to your business.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Custom mobile applications for Android and iOS.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Grow your business with our marketing strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <article class="blog-post">
+                <h3>How to Grow Your Business Online</h3>
+                <p>Discover the latest trends and tips for online business growth.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="blog-post">
+                <h3>Why Choose Us?</h3>
+                <p>Learn what sets us apart from the competition.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="sqlsrv.php" method="post">
+                <input type="hidden" name="form_type" value="contact">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="contactMsg"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Business. All rights reserved.</p>
+    </footer>
+
+    <!-- Sign Up Modal -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSignup">&times;</span>
+    <h2>Sign Up</h2>
+    <form action="sqlsrv.php" method="post">
+      <input type="hidden" name="form_type" value="signup">
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeLogin">&times;</span>
+    <h2>Login</h2>
+    <form action="sqlsrv.php" method="post">
+      <input type="hidden" name="form_type" value="login">
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
