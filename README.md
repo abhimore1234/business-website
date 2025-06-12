@@ -15,7 +15,7 @@ This website is designed to be your online identity—streamlined, accessible, a
 - JavaScript – Interactive functionality
 - PHP – Server-side form handling and backend integration
 ## 📷 Screenshots
-(Insert images here to showcase homepage, features, or forms)
+![Image](https://github.com/user-attachments/assets/36b409b1-a70a-479e-89a4-3759fdaab125)
 ## 📬 Contact
 Have questions, ideas, or just want to connect?
 Reach out: rockydon123412@gmail.com
